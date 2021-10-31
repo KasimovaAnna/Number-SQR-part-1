@@ -13,7 +13,7 @@ class SQRServiceTest {
         int upperBound = 300;
         int expected = 3;
 
-        int actual = service.numberSQR(200, 300);
+        int actual = service.numberSQR(lowerBound, upperBound);
         assertEquals(expected, actual);
     }
 
@@ -24,7 +24,7 @@ class SQRServiceTest {
         int upperBound = 9801;
         int expected = 90;
 
-        int actual = service.numberSQR(100, 9801);
+        int actual = service.numberSQR(lowerBound, upperBound);
         assertEquals(expected, actual);
     }
 }
